@@ -188,5 +188,6 @@ img {
 @media (max-width: 1200px){   
 .navbar-expand-lg .navbar-nav .nav-link{
     display: none;
-} 
+    } 
+}
   

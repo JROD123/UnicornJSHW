@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <!--Alert-->
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <h3>Not looking for unicorn plush toys? Browse our other unicorn products here.</h3>
@@ -52,9 +53,8 @@
                 </a>
         </ul>
         <img id="cart" src="images/cart.svg">
-        <span id="cartmerch" class="badge"></span>
+        <span id="cartitems" class="badge"></span>
     </nav>
-
 
     <div class="container">
         <div class="row">
@@ -89,13 +89,12 @@
                 <hr>
                 <h6>Price</h6>
                 <p>$99.99</p>
-
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">
-                            <h5>Select a Quantity</h5>
+                            <h6>Select a Quantity</h6>
                         </label>
-                        <select id="quantity" style="width: auto" class="form-control">
+                        <select id="ammount" style="width: auto" class="form-control">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -103,9 +102,11 @@
                             <option>5</option>
                         </select>
                     </div>
-                    <button id="addtocart" type="submit" class="btn"><h3>Add to Cart</h3></button>
+                    <button id="addtocart" class="btn">Add to Cart</button>
                 </form>
             </div>
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -120,7 +121,8 @@
                                 pink mane and tail, both scattered through with shimmering silver strands that catch the
                                 light, this enchanting friend is sure to become a new favorite. Additional irresistible details
                                 include super-silky plush fur, satin star decorations, beautiful blue eyes, and a soft, shiny
-                                horn.</div>
+                                horn.
+                            </div>
                             <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="profile-tab">
                                 <ul>
                                     <li>Suitable for ages 3 years and up</li>
@@ -165,6 +167,7 @@
         Everything Unicorns
     </div>
 
+
     <!-- Modal -->
     <div id="modalsignup" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
@@ -180,11 +183,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="exampleInputPassword1">First Name</label>
-                        <input type="password" class="form-control" id="firstname" placeholder="">
+                        <input type="text" class="form-control" id="firstname" placeholder="">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Last Name</label>
-                        <input type="password" class="form-control" id="lastname" placeholder="">
+                        <input type="text" class="form-control" id="lastname" placeholder="">
                     </div>
                     <div class="form-group">
                         Email
@@ -199,18 +202,15 @@
         </div>
 
 
-
-
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
             crossorigin="anonymous"></script>
-        <script scr="unicorn.js"></script>
+        <script src="unicorn.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,30 @@
+$("#signup").click(function() {
+
+    var name = $("#firstname").val();
+    var email = $("#email").val();
+
+    if (email !== "" && name !== "") {
+        $(".modal-title").html("Thanks for signing up" + name + "!");
+        $(".modal-body").html("Deals are on the way!");
+        $(".modal-footer").hide();
+    }
+    else {
+        $("#emailAlert").hide();
+        $("#nameAlert").hide();
+
+        if (email === "") {
+            $("#emailAlert").show();
+        }
+        if (name === "") {
+            $("#nameAlert").show();
+        }
+    }
+});
+
 var cartNumber = 0;
 
-$("#addtocart").click(function (event) {
-  console.log(event)
+
+$("#addtocart").click(function() {
   event.preventDefault();
   var additionalValue = $("#ammount").val();
   cartNumber = cartNumber + parseInt(additionalValue);
@@ -9,28 +32,20 @@ $("#addtocart").click(function (event) {
   $("#cartitems").show();
 });
 
-$("#signup").click(function () {
+var counter=0;
+var colors=["#FF0000","#8503ff","#1ff7ff","#d4ff0e","#ff00ba"];
 
-  var name = $("#firstname").val();
-  var email = $("#email").val();
+function setup(){
+    setInterval(changeColor,1500);
+}
 
-  if (email !== "" && name !== "") {
-    $(".modal-title").html("Thank you for signing up, " + name + "!");
-    $(".modal-body").html("Great deals are on the way!");
-    $(".modal-footer").hide();
-  }
-  else {
+function changeColor(){
+    var body=document.body;
+    body.style.background=colors[counter];
 
-    $("#emailAlert").hide();
-    $("#nameAlert").hide();
-
-    if (email === "") {
-      $("#emailAlert").show();
+    if(counter == 6) {
+        counter=0;
+    }else{
+        counter++;
     }
-    if (name === "") {
-      $("#nameAlert").show();
-    }
-  }
-});
-
-console.log('hello')
+}
